@@ -19,7 +19,7 @@ await foreach(element in container.GetItemLinqQueryable<MyObject>().QueryContain
 }
 ```
 
-it is also possible tu use all of the above directly with an iterator:
+it is also possible to use all of the above directly with an iterator:
 
 ```csharp
 string[] distinctValues = await container.GetItemQueryIterator<string>($"select distinct value c.some from c").ToItemArrayAsync();
