@@ -18,4 +18,7 @@
       <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CdIts.CosmosExtensions.Filter\CdIts.CosmosExtensions.Filter.csproj" />
+    </ItemGroup>
 </Project>

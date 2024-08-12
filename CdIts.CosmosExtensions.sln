@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdIts.CosmosExtensions", "CdIts.CosmosExtensions\CdIts.CosmosExtensions.csproj", "{05990290-B8EA-4AED-92F7-2401D79EAD75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdIts.CosmosExtensions.Filter", "CdIts.CosmosExtensions.Filter\CdIts.CosmosExtensions.Filter.csproj", "{F95B9C3C-D279-4CE1-BB03-39A7AFB6B5B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{05990290-B8EA-4AED-92F7-2401D79EAD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05990290-B8EA-4AED-92F7-2401D79EAD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05990290-B8EA-4AED-92F7-2401D79EAD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95B9C3C-D279-4CE1-BB03-39A7AFB6B5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95B9C3C-D279-4CE1-BB03-39A7AFB6B5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95B9C3C-D279-4CE1-BB03-39A7AFB6B5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95B9C3C-D279-4CE1-BB03-39A7AFB6B5B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

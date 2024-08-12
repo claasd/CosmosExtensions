@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using CdIts.CosmosExtensions.Filter;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Cosmos.Linq;
 
@@ -43,4 +44,20 @@ public static class Extensions
 
     public static async Task<List<T>> ToItemListAsync<T>(this IQueryable<T> query, CancellationToken cancellationToken = default) =>
         await query.QueryContainerAsync(cancellationToken).ToListAsync(cancellationToken: cancellationToken);
+
+    public static IQueryable<T> TakeRange<T>(this IQueryable<T> query, int offset, int? limit)
+    {
+
+        if (offset > 0 || limit is > 0)
+            query = query.Skip(offset);
+        if (limit is > 0)
+            query = query.Take(limit.Value);
+        return query;
+    }
+    
+    public static IQueryable<T> Filter<T>(this IQueryable<T> query, CosmosCustomFilterBase<T> filterBase)
+    {
+        return filterBase.ApplyOrdering(filterBase.ApplyFilter(query));
+    }
+    
 }
