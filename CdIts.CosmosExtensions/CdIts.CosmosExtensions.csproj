@@ -7,10 +7,10 @@
         <Nullable>enable</Nullable>
         <LangVersion>10</LangVersion>
         <IsPackable>true</IsPackable>
-        <RepositoryUrl>https://github.com/claasd/OtdrReader.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/claasd/CosmosExtensions.git</RepositoryUrl>
         <Authors>claasd</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <Description>C#/NET implementation for reading SOR (Standard OTDR Record) V2 files.</Description>
+        <Description>CosmosExtensions is a library that provides a set of extension methods for the Azure Cosmos DB SDK LINQ methods, especially for async operations without the need to use .HasMoreResults</Description>
     </PropertyGroup>
 
     <ItemGroup>

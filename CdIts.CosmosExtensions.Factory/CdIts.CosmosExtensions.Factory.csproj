@@ -4,7 +4,13 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <LangVersion>latest</LangVersion>
+        <LangVersion>10</LangVersion>
+        <IsPackable>true</IsPackable>
+        <RepositoryUrl>https://github.com/claasd/CosmosExtensions.git</RepositoryUrl>
+        <Authors>claasd</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Description>CosmosExtensions.Factory implements a factory that creates CosmosClients that use JSON.NET for serialization with customizable JsonSerializer settings and ignoring "required" attributes.
+            Furthermore, it exposes a CosmosConnector as a way to have a singleton CosmosClient that can be used throughout the application by using dependency injection.</Description>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.43.0"/>
