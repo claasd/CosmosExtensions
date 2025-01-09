@@ -10,11 +10,11 @@ public static class ServiceExtensions
         services.AddCosmosConnectorInt(null, configSection);
 
     public static IServiceCollection AddCosmosConnector(this IServiceCollection services, TokenCredential credential,
-        string configSection = " cosmos") =>
+        string configSection = "cosmos") =>
         services.AddCosmosConnectorInt(credential, configSection);
 
     private static IServiceCollection AddCosmosConnectorInt(this IServiceCollection services, TokenCredential? credential,
-        string configSection = " cosmos")
+        string configSection = "cosmos")
     {
         services.AddOptions<CosmosConnectorConfig>().Configure((CosmosConnectorConfig options, IConfiguration config) =>
         {
