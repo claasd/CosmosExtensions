@@ -10,7 +10,13 @@ public class CosmosConnector
 
     protected CosmosConnector()
     {
-        // allow overwriting to use thier own options
+        // allow overwriting to use their own options
+    }
+    
+    protected CosmosConnector(CosmosClient client, string dbName)
+    {
+        Client = client;
+        Database = client.GetDatabase(dbName);
     }
     
     public CosmosConnector(IOptions<CosmosConnectorConfig> options)
