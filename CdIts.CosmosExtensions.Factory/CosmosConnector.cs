@@ -5,8 +5,8 @@ namespace CdIts.CosmosExtensions.Factory;
 
 public class CosmosConnector
 {
-    public Database Database { get; }
-    public CosmosClient Client { get; }
+    public Database Database { get; protected set; }
+    public CosmosClient Client { get; protected set; }
 
     protected CosmosConnector()
     {
