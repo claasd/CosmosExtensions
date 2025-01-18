@@ -5,9 +5,14 @@ namespace CdIts.CosmosExtensions.Factory;
 
 public class CosmosConnector
 {
-    public Microsoft.Azure.Cosmos.Database Database { get; }
+    public Database Database { get; }
     public CosmosClient Client { get; }
 
+    protected CosmosConnector()
+    {
+        // allow overwriting to use thier own options
+    }
+    
     public CosmosConnector(IOptions<CosmosConnectorConfig> options)
     {
         try
