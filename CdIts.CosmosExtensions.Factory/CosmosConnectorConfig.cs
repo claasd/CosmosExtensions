@@ -1,4 +1,5 @@
 using Azure.Core;
+using Newtonsoft.Json;
 
 namespace CdIts.CosmosExtensions.Factory;
 
@@ -23,4 +24,5 @@ public class CosmosConnectorConfig
         set => DefaultDatabaseName = value;
     }
     public bool StoreNullValues { get; set; } = false;
+    public JsonSerializerSettings? Settings { get; set; }
 }

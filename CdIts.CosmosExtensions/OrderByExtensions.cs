@@ -11,6 +11,8 @@ namespace CdIts.CosmosExtensions;
 public static class OrderByExtensions
 {
     public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string property) => ApplyOrder(source, property, "OrderBy");
+    public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string property, bool descending) => 
+    descending ? OrderByDescending(source, property) : OrderBy(source, property);
 
     public static IOrderedQueryable<T> OrderByDescending<T>(this IQueryable<T> source, string property) =>
         ApplyOrder(source, property, "OrderByDescending");

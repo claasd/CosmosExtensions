@@ -54,7 +54,6 @@ public static class Extensions
             query = query.Take(limit.Value);
         return query;
     }
-    
     public static IQueryable<T> Filter<T>(this IQueryable<T> query, CosmosCustomFilterBase<T> filterBase)
     {
         return filterBase.ApplyOrdering(filterBase.ApplyFilter(query));
