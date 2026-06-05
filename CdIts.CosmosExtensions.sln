@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdIts.CosmosExtensions.Filt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdIts.CosmosExtensions.Factory", "CdIts.CosmosExtensions.Factory\CdIts.CosmosExtensions.Factory.csproj", "{CCDF7817-297D-4B78-A013-2198C5CF8340}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdIts.CosmosExtensions.SliceFilter", "CdIts.CosmosExtensions.SliceFilter\CdIts.CosmosExtensions.SliceFilter.csproj", "{875A4986-B418-47E3-968E-1C3618EA3298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{CCDF7817-297D-4B78-A013-2198C5CF8340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCDF7817-297D-4B78-A013-2198C5CF8340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCDF7817-297D-4B78-A013-2198C5CF8340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875A4986-B418-47E3-968E-1C3618EA3298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875A4986-B418-47E3-968E-1C3618EA3298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875A4986-B418-47E3-968E-1C3618EA3298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875A4986-B418-47E3-968E-1C3618EA3298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

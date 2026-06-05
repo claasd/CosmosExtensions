@@ -14,8 +14,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.43.0"/>
-        <PackageReference Include="System.Linq.Async" Version="6.0.1"/>
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.61.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        <PackageReference Include="System.Linq.Async" Version="7.0.1" />
     </ItemGroup>
 
     <ItemGroup>

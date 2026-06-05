@@ -1,0 +1,28 @@
+openapi: "3.0.2"
+info:
+  title: Slice openapi definitions
+  version: "1.0.0"
+paths:
+  /dummy:
+    get:
+      responses:
+        '200':
+          description: Odummy
+
+components:
+  schemas:
+    SliceInfo:
+      type: object
+      properties:
+        total:
+          type: integer
+        filtered:
+          type: integer
+        offset:
+          type: integer
+        limit:
+          type: integer
+      required:
+        - total
+        - filtered
+        - offset
