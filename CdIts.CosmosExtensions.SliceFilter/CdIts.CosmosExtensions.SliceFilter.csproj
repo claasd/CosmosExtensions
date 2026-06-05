@@ -9,5 +9,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CdIts.CosmosExtensions\CdIts.CosmosExtensions.csproj" />
+      <ProjectReference Include="..\CdIts.SliceInfo\CdIts.SliceInfo.csproj" />
     </ItemGroup>
 </Project>

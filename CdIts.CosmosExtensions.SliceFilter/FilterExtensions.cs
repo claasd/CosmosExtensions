@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using CdIts.Slicing;
 using Microsoft.Azure.Cosmos.Linq;
 
 namespace CdIts.CosmosExtensions.SliceFilter;

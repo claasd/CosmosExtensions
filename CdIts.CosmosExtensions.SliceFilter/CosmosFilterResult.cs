@@ -1,4 +1,6 @@
-﻿namespace CdIts.CosmosExtensions.SliceFilter;
+﻿using CdIts.Slicing;
+
+namespace CdIts.CosmosExtensions.SliceFilter;
 
 public class CosmosFilterResult<T>(List<T> items, SliceInfo sliceInfo)
 {
