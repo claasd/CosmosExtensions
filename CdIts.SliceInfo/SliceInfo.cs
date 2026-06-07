@@ -15,4 +15,11 @@ public class SliceInfo
     
     [JsonProperty("limit")]
     public int? Limit { get; set; }
+    public SliceInfo ToSliceInfo() => new()
+    {
+        Total = Total,
+        Filtered = Filtered,
+        Offset = Offset,
+        Limit = Limit
+    };   
 }
